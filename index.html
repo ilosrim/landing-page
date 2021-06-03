@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Project</title>
+	<link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet"
+		href="bootstrap/plugins/plugins/OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+	<link rel="stylesheet"
+		href="bootstrap/plugins/plugins/OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+	<link rel="stylesheet" href="./bootstrap/css/main.css">
+</head>
+
+<body>
+	<!-- navbar section -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-white">
+		<div class="container">
+
+			<!-- navbar brand -->
+			<a href="#" class="navbar-brand logo">
+				<img src="./images/logo.png" class="img-fluid" alt="logo">
+			</a>
+
+			<!-- navbar mobile -->
+			<ul class="nav navbar-nav mobileNav ml-auto">
+				<li class="nav-item" data-toggle="modal" data-target="#myModal">
+					<img src="./images/heart.png" alt="search">
+				</li>
+				<li class="nav-item">
+					<img src="./images/korzina-black.png" alt="korzinka">
+				</li>
+			</ul>
+			<!-- navbar button -->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+				<span class="navbar-toggler-icon">
+				</span>
+			</button>
+
+			<!-- nav link -->
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="#">Категории</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Партнеры</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Сервисные центры</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Новости</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Вакансии</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#"> Контакты</a>
+					</li>
+				</ul>
+			</div>
+
+			<!-- nav icon -->
+			<ul class="nav desktopIcons">
+				<li class="nav-item" data-toggle="modal" data-target="#myModal">
+					<img src="./images/search.png" alt="">
+				</li>
+				<li class="nav-item nav-item-after">
+					<img src="./images/heart.png" alt="">
+				</li>
+				<li class="nav-item">
+					<img src="./images/korzina-black.png" alt="">
+				</li>
+				<li class="nav-item">
+					<img src="./images/logout.png" alt="">
+				</li>
+			</ul>
+
+		</div>
+	</nav>
+	<div class="search-section">
+		<div class="search-box">
+			<img src="./images/search.png" class="img-fluid" alt="">
+			<input type="text" class="form-control" placeholder="Какую технику Вы ищите?">
+		</div>
+	</div>
+	<!-- modal section -->
+	<!-- The Modal -->
+	<div class="modal fade" id="myModal">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+
+				<!-- Modal Header -->
+				<div class="modal-header">
+					<h4 class="modal-title">Search section</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+
+				<!-- Modal body -->
+				<div class="modal-body">
+					<input type="text" placeholder="Search..." class="form-control">
+				</div>
+
+				<!-- Modal footer -->
+				<div class="modal-footer">
+					<button type="button" class="btn btn-info" data-dismiss="modal">Search</button>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- header section -->
+	<header class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="title">
+						Эффектный просмотр
+					</div>
+					<div class="t-text">
+						Полное погружение с телевизорами Artel 8K
+					</div>
+					<div class="links">
+						<div class="allButton">
+							<a href="#">Купить онлайн</a>
+						</div>
+						<a href="#" class="button-sec">
+							Узнать больше
+							<img src="./images/right-vector.png" alt="">
+						</a>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<!-- <div class="owl-carousel owl-theme" id="myCarousel">
+  					<div class="slide-img">
+  						<img src="./images/headerbg.png" class="img-fluid" alt="">
+  						<p>Artel TV UA50H3401 (127 см) Android</p>
+  					</div>
+  					<div class="slide-img">
+  						<img src="./images/headerbg.png" class="img-fluid" alt="">
+  						<p>Artel TV UA50H3401 (127 см) Android</p>
+  					</div>
+  					<div class="slide-img">
+  						<img src="./images/headerbg.png" class="img-fluid" alt="">
+  						<p>Artel TV UA50H3401 (127 см) Android</p>
+  					</div>
+  					<div class="slide-img">
+  						<img src="./images/headerbg.png" class="img-fluid" alt="">
+  						<p>Artel TV UA50H3401 (127 см) Android</p>
+  					</div>
+  					<div class="slide-img">
+  						<img src="./images/headerbg.png" class="img-fluid" alt="">
+  						<p>Artel TV UA50H3401 (127 см) Android</p>
+  					</div>
+  				</div> -->
+					<div class="owl-carousel owl-theme" id="myCarousel">
+						<img src="./images/headerbg.png" class="img-fluid" alt="">
+						<img src="./images/headerbg.png" class="img-fluid" alt="">
+						<img src="./images/headerbg.png" class="img-fluid" alt="">
+						<img src="./images/headerbg.png" class="img-fluid" alt="">
+						<img src="./images/headerbg.png" class="img-fluid" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- section one -->
+	<section class="category-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 d-flex justify-content-between align-items-center">
+					<div class="allTitle">
+						Категории
+					</div>
+					<div class="button-sec">
+						Посмотреть все
+						<img src="./images/right-vector.png" alt="">
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-6 col-sm-12">
+					<div class="card">
+						<div class="card-overlay">
+							<div class="card-text">
+								Мелкая бытовая <br>
+								техника
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-12">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="card">
+								<div class="card-overlay">
+									<div class="card-text">
+										Телефоны
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="card last-card there-img">
+								<div class="card-overlay">
+									<div class="card-text">
+										Телевизоры
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-12">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="card four-img">
+								<div class="card-overlay">
+									<div class="card-text">
+										Печи
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="card last-card five-img">
+								<div class="card-overlay">
+									<div class="card-text">
+										Холодильники
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="allButton text-center text-white">
+					Еще
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- section-two -->
+	<section class="service-sectione">
+		<div class="container">
+			<div class="row justify-content-between">
+				<div class="col-md-3 col-6">
+					<div class="box">
+						<div class="s-head">
+							<img src="./images/icon-1.png" alt="">
+						</div>
+						<div class="s-body">
+							Самый крупный производитель
+							в Средней Азии
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-6">
+					<div class="box">
+						<div class="s-head">
+							<img src="./images/icon-2.png" alt="">
+						</div>
+						<div class="s-body">
+							Бесплатная доставка
+							по Узбекистану
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-6">
+					<div class="box">
+						<div class="s-head">
+							<img src="./images/icon-3.png" alt="">
+						</div>
+						<div class="s-body">
+							3 года гарантии и бесплатного
+							обслуживания
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-6">
+					<div class="box">
+						<div class="s-head">
+							<img src="./images/icon-4.png" alt="">
+						</div>
+						<div class="s-body">
+							Круглосуточная техническая
+							поддержка
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- popular tovar section -->
+	<section class="popular-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 d-flex justify-content-between align-items-center">
+					<div class="allTitle">
+						Популярные товары
+					</div>
+					<div class="button-sec">
+						Посмотреть все
+						<img src="./images/right-vector.png" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<!-- <div class="owl-carousel owl-theme" id="myCarouselTwo">
+					<div class="card">
+						<img src="./images/pop-1.png" alt="">
+						<div class="card-title">
+							Микроволновая печь Artel
+							23MX39
+						</div>
+						<div class="baho d-flex align-items-center justify-content-between">
+							<div class="stars d-flex align-items-center">
+								<img src="./images/star.png" alt="">
+								<img src="./images/star.png" alt="">
+								<img src="./images/star.png" alt="">
+								<img src="./images/star.png" alt="">
+								<img src="./images/star.png" alt="">
+							</div>
+							<a href="#" class="baho-link">Отзывы</a>
+						</div>
+						<div class="sum">
+							1 500 000 сум
+						</div>
+						<div class="f-card d-flex align-items-center justify-content-between">
+							<div class="icon-group d-flex align-items-center justify-content-center">
+								<img src="./images/heart-white.png" class="b-img" alt="">
+								<img src="./images/tarozi.png" class="b-img-no" alt="">
+							</div>
+							<div class="korzinka d-flex justify-content-center align-items-center">
+								<img src="./images/korzina.png" alt="">
+							</div>
+						</div>
+					</div>
+
+					<div class="card">
+						<img src="./images/pop-2.png" alt="">
+						<div class="card-title">
+							Электрический чайный
+							набор ART-TM-168
+						</div>
+						<div class="baho d-flex align-items-center justify-content-between">
+							<div class="stars d-flex align-items-center">
+								<img src="./images/star.png" alt="">
+								<img src="./images/star.png" alt="">
+								<img src="./images/star.png" alt="">
+								<img src="./images/star.png" alt="">
+								<img src="./images/star.png" alt="">
+							</div>
+							<a href="#" class="baho-link">Отзывы</a>
+						</div>
+						<div class="sum">
+							300 000 сум
+						</div>
+						<div class="f-card d-flex align-items-center justify-content-between">
+							<div class="icon-group d-flex align-items-center justify-content-center">
+								<img src="./images/heart-white.png" class="b-img" alt="">
+								<img src="./images/tarozi.png" class="b-img-no" alt="">
+							</div>
+							<div class="korzinka d-flex justify-content-center align-items-center">
+								<img src="./images/korzina.png" alt="">
+							</div>
+						</div>
+					</div>
+
+					<div class="card">
+						<img src="./images/pop-3.png" alt="">
+						<div class="card-title">
+							Artel TV UA75H3502 (190 см)
+							Android
+						</div>
+						<div class="baho d-flex align-items-center justify-content-between">
+							<div class="stars d-flex align-items-center">
+								<img src="./images/star.png" alt="">
+								<img src="./images/star.png" alt="">
+								<img src="./images/star.png" alt="">
+								<img src="./images/star.png" alt="">
+								<img src="./images/star.png" alt="">
+							</div>
+							<a href="#" class="baho-link">Отзывы</a>
+						</div>
+						<div class="sum">
+							3 000 000 сум
+						</div>
+						<div class="f-card d-flex align-items-center justify-content-between">
+							<div class="icon-group d-flex align-items-center justify-content-center">
+								<img src="./images/heart-white.png" class="b-img" alt="">
+								<img src="./images/tarozi.png" class="b-img-no" alt="">
+							</div>
+							<div class="korzinka d-flex justify-content-center align-items-center">
+								<img src="./images/korzina.png" alt="">
+							</div>
+						</div>
+					</div>
+
+					<div class="card">
+						<img src="./images/pop-4.png" alt="">
+						<div class="card-title">
+							Автоматическая стиральная
+							машина Artel 60C101-I-WH
+						</div>
+						<div class="baho d-flex align-items-center justify-content-between">
+							<div class="stars d-flex align-items-center">
+								<img src="./images/star.png" alt="">
+								<img src="./images/star.png" alt="">
+								<img src="./images/star.png" alt="">
+								<img src="./images/star.png" alt="">
+								<img src="./images/star.png" alt="">
+							</div>
+							<a href="#" class="baho-link">Отзывы</a>
+						</div>
+						<div class="sum">
+							6 000 000 сум
+						</div>
+						<div class="f-card d-flex align-items-center justify-content-between">
+							<div class="icon-group d-flex align-items-center justify-content-center">
+								<img src="./images/heart-white.png" class="b-img" alt="">
+								<img src="./images/tarozi.png" class="b-img-no" alt="">
+							</div>
+							<div class="korzinka d-flex justify-content-center align-items-center">
+								<img src="./images/korzina.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div> -->
+
+				<div class="col-md-3">
+					<div class="card">
+						<img src="./images/pop-1.png" alt="">
+						<div class="card-title">
+							Микроволновая печь Artel
+							23MX39
+						</div>
+						<div class="baho d-flex align-items-center justify-content-between">
+							<div class="stars d-flex align-items-center">
+								<img src="./images/star.png" alt="">
+								<img src="./images/star.png" alt="">
+								<img src="./images/star.png" alt="">
+								<img src="./images/star.png" alt="">
+								<img src="./images/star.png" alt="">
+							</div>
+							<a href="#" class="baho-link">Отзывы</a>
+						</div>
+						<div class="sum">
+							1 500 000 сум
+						</div>
+						<div class="f-card d-flex align-items-center justify-content-between">
+							<div class="icon-group d-flex align-items-center justify-content-center">
+								<img src="./images/heart-white.png" class="b-img" alt="">
+								<img src="./images/tarozi.png" class="b-img-no" alt="">
+							</div>
+							<div class="korzinka d-flex justify-content-center align-items-center">
+								<img src="./images/korzina.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="card">
+						<img src="./images/pop-2.png" alt="">
+						<div class="card-title">
+							Электрический чайный
+							набор ART-TM-168
+						</div>
+						<div class="baho d-flex align-items-center justify-content-between">
+							<div class="stars d-flex align-items-center">
+								<img src="./images/star.png" alt="">
+								<img src="./images/star.png" alt="">
+								<img src="./images/star.png" alt="">
+								<img src="./images/star.png" alt="">
+								<img src="./images/star.png" alt="">
+							</div>
+							<a href="#" class="baho-link">Отзывы</a>
+						</div>
+						<div class="sum">
+							300 000 сум
+						</div>
+						<div class="f-card d-flex align-items-center justify-content-between">
+							<div class="icon-group d-flex align-items-center justify-content-center">
+								<img src="./images/heart-white.png" class="b-img" alt="">
+								<img src="./images/tarozi.png" class="b-img-no" alt="">
+							</div>
+							<div class="korzinka d-flex justify-content-center align-items-center">
+								<img src="./images/korzina.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="card">
+						<img src="./images/pop-3.png" alt="">
+						<div class="card-title">
+							Artel TV UA75H3502 (190 см)
+							Android
+						</div>
+						<div class="baho d-flex align-items-center justify-content-between">
+							<div class="stars d-flex align-items-center">
+								<img src="./images/star.png" alt="">
+								<img src="./images/star.png" alt="">
+								<img src="./images/star.png" alt="">
+								<img src="./images/star.png" alt="">
+								<img src="./images/star.png" alt="">
+							</div>
+							<a href="#" class="baho-link">Отзывы</a>
+						</div>
+						<div class="sum">
+							3 000 000 сум
+						</div>
+						<div class="f-card d-flex align-items-center justify-content-between">
+							<div class="icon-group d-flex align-items-center justify-content-center">
+								<img src="./images/heart-white.png" class="b-img" alt="">
+								<img src="./images/tarozi.png" class="b-img-no" alt="">
+							</div>
+							<div class="korzinka d-flex justify-content-center align-items-center">
+								<img src="./images/korzina.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="card">
+						<img src="./images/pop-4.png" alt="">
+						<div class="card-title">
+							Автоматическая стиральная
+							машина Artel 60C101-I-WH
+						</div>
+						<div class="baho d-flex align-items-center justify-content-between">
+							<div class="stars d-flex align-items-center">
+								<img src="./images/star.png" alt="">
+								<img src="./images/star.png" alt="">
+								<img src="./images/star.png" alt="">
+								<img src="./images/star.png" alt="">
+								<img src="./images/star.png" alt="">
+							</div>
+							<a href="#" class="baho-link">Отзывы</a>
+						</div>
+						<div class="sum">
+							6 000 000 сум
+						</div>
+						<div class="f-card d-flex align-items-center justify-content-between">
+							<div class="icon-group d-flex align-items-center justify-content-center">
+								<img src="./images/heart-white.png" class="b-img" alt="">
+								<img src="./images/tarozi.png" class="b-img-no" alt="">
+							</div>
+							<div class="korzinka d-flex justify-content-center align-items-center">
+								<img src="./images/korzina.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="allButton text-center text-white">
+					Купить онлайн
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- partnire section -->
+	<section class="partnire-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 d-flex justify-content-between align-items-center">
+					<div class="allTitle">
+						Наши партнеры
+					</div>
+					<div class="button-sec">
+						Подробнее
+						<img src="./images/right-vector.png" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="partnire-brends d-flex align-items-center justify-content-between">
+				<img src="./images/shivaki.png" alt="">
+				<img src="./images/samsung.png" alt="">
+				<img src="./images/avalon.png" alt="">
+				<img src="./images/royal.png" alt="">
+			</div>
+		</div>
+	</section>
+
+	<!-- faq section -->
+	<section class="faq-section d-flex align-items-center justify-content-around">
+		<div class="allButton">
+			<img src="./images/tel.png" alt="">
+			<div class="tel-text">
+				Онлайн консультация
+			</div>
+		</div>
+
+		<div class="allButton btnYellow">
+			<img src="./images/tel-star.png" alt="">
+			<div class="tel-text">
+				Подписаться на акции
+			</div>
+		</div>
+	</section>
+
+	<!-- footer section -->
+	<footer class="footer">
+		<div class="container">
+
+			<!-- desktop footer -->
+			<div class="row desktop">
+				<div class="col-md-8">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="nav-title">
+								О компании
+							</div>
+							<ul class="navbar-nav">
+								<li class="nav-item">
+									<a href="#" class="nav-link">Гарантии качества</a>
+								</li>
+								<li class="nav-item">
+									<a href="#" class="nav-link">Адреса и контакты</a>
+								</li>
+								<li class="nav-item">
+									<a href="#" class="nav-link">Производство</a>
+								</li>
+								<li class="nav-item">
+									<a href="#" class="nav-link">Принципы </a>
+								</li>
+								<li class="nav-item">
+									<a href="#" class="nav-link">Новости</a>
+								</li>
+								<li class="nav-item">
+									<a href="#" class="nav-link">Медиа</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-4">
+							<div class="nav-title">
+								Продукция партнеров
+							</div>
+							<ul class="navbar-nav">
+								<li class="nav-item">
+									<a href="#" class="nav-link">Shivaki</a>
+								</li>
+								<li class="nav-item">
+									<a href="#" class="nav-link">Sansung</a>
+								</li>
+								<li class="nav-item">
+									<a href="#" class="nav-link">Avalon</a>
+								</li>
+								<li class="nav-item">
+									<a href="#" class="nav-link">Royal</a>
+								</li>
+								<li class="nav-item">
+									<a href="#" class="nav-link">Вакансии</a>
+								</li>
+								<li class="nav-item">
+									<a href="#" class="nav-link">Онлайн CV</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-4">
+							<div class="nav-title">
+								Все категории
+							</div>
+							<ul class="navbar-nav">
+								<li class="nav-item">
+									<a href="#" class="nav-link">Мелакая бытовая техника</a>
+								</li>
+								<li class="nav-item">
+									<a href="#" class="nav-link">Телефоны</a>
+								</li>
+								<li class="nav-item">
+									<a href="#" class="nav-link">Телевизоры</a>
+								</li>
+								<li class="nav-item">
+									<a href="#" class="nav-link">Печи</a>
+								</li>
+								<li class="nav-item">
+									<a href="#" class="nav-link">Пылесосы</a>
+								</li>
+								<li class="nav-item">
+									<a href="#" class="nav-link">Плиты</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 f-pl" style="padding-left: 53px;">
+					<div class="qr-code d-flex align-items-center">
+						<img src="./images/qr-code.png" alt="">
+						<div class="qr-text">
+							Скачать <br>
+							приложение Artel
+						</div>
+					</div>
+					<div class="apps d-flex align-items-center justify-content-between">
+						<img src="./images/google-play.png" alt="">
+						<img src="./images/app-store.png" alt="">
+					</div>
+					<div class="social-media d-flex align-items-center justify-content-between">
+						<img src="./images/fb.png" alt="">
+						<img src="./images/insta.png" alt="">
+						<img src="./images/tg.png" alt="">
+					</div>
+				</div>
+
+				<div class="col-md-12 d-flex align-items-center justify-content-between">
+					<div class="info-text">
+						Информация на сайте предоставлена исключительно для предварительного ознакомления. <br>
+						Производитель оставляет за собой право на внесение изменений в конструкцию, комплектацию и
+						дизайн приборов. <br>
+						Комплектация и дизайн товара могут также варьироваться в зависимости от модели, страны поставки
+						и предпочтений заказчика.
+					</div>
+					<div class="allButton">
+						<div class="btnText">Скачать весь каталог продукции</div>
+						<img src="./images/download.png" alt="">
+					</div>
+				</div>
+			</div>
+
+			<!-- mobile footer -->
+			<div class="row mobile">
+				<div class="col-md-4 f-pl">
+					<div class="qr-code d-flex align-items-center">
+						<img src="./images/qr-code.png" alt="">
+						<div class="qr-text">
+							Скачать <br>
+							приложение Artel
+						</div>
+					</div>
+					<div class="apps d-flex align-items-center justify-content-between">
+						<img src="./images/google-play.png" alt="">
+						<img src="./images/app-store.png" alt="">
+					</div>
+					<div class="social-media d-flex align-items-center justify-content-between">
+						<img src="./images/fb.png" alt="">
+						<img src="./images/insta.png" alt="">
+						<img src="./images/tg.png" alt="">
+					</div>
+					<div class="allButton">
+						<div class="btnText">Скачать весь каталог продукции</div>
+						<img src="./images/download.png" alt="">
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="nav-title">
+						О компании
+					</div>
+					<ul class="navbar-nav ">
+						<li class="nav-item">
+							<a href="#" class="nav-link">Гарантии качества</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">Адреса и контакты</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">Производство</a>
+						</li>
+
+						<li class="nav-item">
+							<a href="#" class="nav-link">Принципы </a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">Новости</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">Медиа</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<div class="nav-title">
+						Продукция партнеров
+					</div>
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a href="#" class="nav-link">Shivaki</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">Sansung</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">Avalon</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">Royal</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">Вакансии</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">Онлайн CV</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<div class="nav-title">
+						Все категории
+					</div>
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a href="#" class="nav-link">Мелакая бытовая техника</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">Телефоны</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">Телевизоры</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">Печи</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">Пылесосы</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">Плиты</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="col-md-4">
+					<div class="info-text">
+						Информация на сайте предоставлена исключительно для предварительного ознакомления.
+						Производитель оставляет за собой право на внесение изменений в конструкцию, комплектацию и дизайн
+						приборов.
+						Комплектация и дизайн товара могут также варьироваться в зависимости от модели, страны поставки и
+						предпочтений заказчика.
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+</body>
+<script src="./bootstrap/js/jquery.js"></script>
+<script src="./bootstrap/js/src/popover.js"></script>
+<script src="./bootstrap/js/bootstrap.min.js"></script>
+<script src="./bootstrap/plugins/plugins/OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+<script src="./bootstrap/js/index.js"></script>
+
+</html>
