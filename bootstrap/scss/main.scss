@@ -8,6 +8,23 @@ $bgIconOne: #F6F6F6;
 $bgIconTwo: #E6FAF0;
 $bgIconThere: #F4F4F4;
 
+ /* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $btnColor;
+  border-radius: 10px;
+} 
+
 .allButton{
 	width: 197px;
 	height: 56px;
@@ -37,7 +54,7 @@ $bgIconThere: #F4F4F4;
 	font-size: 80px;
 	line-height: 85px;
 	letter-spacing: -0.02em;
-	color: #textColor;
+	color: $textColor;
 	margin-top:117px;
 	margin-bottom:17px;
 }
@@ -110,7 +127,6 @@ body{
 	margin:0;
 	padding:0;
 	box-sizing:border-box;
-
 	// navbar
 	.navbar{
 		.container{
@@ -924,6 +940,9 @@ body{
 			.allTitle{
 				font-size: 30px;
 				line-height: 36px;
+			}
+			.card{
+				padding:20px 125px 0;
 			}
 		}
 		.partnire-section{
