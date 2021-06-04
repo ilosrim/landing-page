@@ -995,13 +995,12 @@ body{
 				.mobileNav{
 					display:flex !important;
 					flex-direction:row;
+					margin-left: 300px !important;
 					.nav-item{
 						margin-left: 10px !important;
 					}
 				}
-				.navbar-nav{
-					margin-left: 0 !important;
-				}
+
 				.desktopIcons{
 					display:none !important;
 				}
@@ -1044,37 +1043,6 @@ body{
 		}
 		.header{
 			.row{
-				flex-direction:column-reverse;
-				// .owl-carousel{
-				// 	.owl-item{
-				// 		margin-right: 0;
-				// 		.slide-img{
-				// 			width: 700px;
-				// 			height: 225px;
-				// 			margin-right: 46px !important;
-				// 			p{
-				// 				display:none !important;
-				// 			}
-				// 		}
-				// 	}
-				// 	.owl-nav{
-				// 		button.owl-next{
-				// 			bottom: 50%;
-				// 			right: 0;
-				// 		}
-				// 		button.owl-prev{
-				// 			left: 0;
-				//     	bottom: 50%;
-				// 		}
-				// 	}
-				// 	.owl-theme{
-				// 		.owl-dots{
-				// 			display: flex;
-				// 			justify-content: center;
-				// 			padding-right: 0 !important;
-				// 		}
-				// 	}
-				// }
 				.col-md-6{
 					.title{
 						font-size: 40px;
@@ -1105,7 +1073,7 @@ body{
 						.owl-nav{
 							button.owl-next{
 								bottom: 50%;
-								right: 0;
+								right: -20%;
 							}
 						}
 						.owl-theme{
@@ -1127,11 +1095,19 @@ body{
 			.col-md-6{
 				.card{
 					height: 407px !important;
+					.card-text{
+						font-size: 24px !important;
+						line-height: 30px !important;
+					}
 				}
 			}
 			.col-md-3{
 				.card{
 					height: 187px;
+					.card-text{
+						font-size:20px !important;
+						padding-left: 9px !important;
+					}
 				}
 			}
 		}
@@ -1154,6 +1130,15 @@ body{
 				font-size: 30px;
 				line-height: 36px;
 			}
+			.cardBoxs{
+				display:flex;
+				justify-content:center;
+				.card{
+					width:320px !important;
+					padding: 0 2px !important;
+				}
+			}
+			
 		}
 		.partnire-section{
 			.allTitle{
@@ -1212,6 +1197,42 @@ body{
 					margin-top: 58px;
 				}
 			}
+		}
+	}
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+	.navbar{
+		.mobileNav{
+			padding-left: 430px !important;
+		}
+		.collapse{
+			.nav-link{
+				font-size:14px;
+			}
+		}
+		.desktopIcons{
+			display:flex;
+			.nav-item{
+				margin-left: 6px !important;
+			}
+		}
+	}
+	
+	.popular-section{
+		.baho{
+			flex-direction:column;
+		}
+		.icon-group{
+			width: 80px !important;
+			height: 40px !important;
+			padding: 0 50px !important;
+			img{
+				width: 36px;
+			}
+		}
+		.korzinka{
+			width:40px !important;
+			height:40px !important;
 		}
 	}
 }

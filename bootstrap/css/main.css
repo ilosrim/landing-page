@@ -657,11 +657,10 @@ body {
       padding: 0 !important; }
       body .navbar .container .mobileNav {
         display: flex !important;
-        flex-direction: row; }
+        flex-direction: row;
+        margin-left: 300px !important; }
         body .navbar .container .mobileNav .nav-item {
           margin-left: 10px !important; }
-      body .navbar .container .navbar-nav {
-        margin-left: 0 !important; }
       body .navbar .container .desktopIcons {
         display: none !important; }
       body .navbar .container .nav {
@@ -691,42 +690,46 @@ body {
           color: rgba(0, 0, 0, 0.2); }
         body .search-section .search-box .form-control:focus {
           box-shadow: none; }
-  body .header .row {
-    flex-direction: column-reverse; }
-    body .header .row .col-md-6 .title {
-      font-size: 40px;
-      line-height: 45px;
-      padding: 0 20px;
-      text-align: center;
-      margin-top: 40px; }
-    body .header .row .col-md-6 .t-text {
-      font-size: 16px;
-      line-height: 29px;
-      margin-bottom: 40px;
-      text-align: center; }
-    body .header .row .col-md-6 .links {
-      flex-direction: column;
-      justify-content: center; }
-      body .header .row .col-md-6 .links .button-sec {
-        margin-left: 0px;
-        margin-top: 37px; }
-    body .header .row .col-md-6 .owl-carousel .slide-img {
-      width: 328px;
-      height: 225px; }
-    body .header .row .col-md-6 .owl-carousel .owl-nav button.owl-next {
-      bottom: 50%;
-      right: 0; }
-    body .header .row .col-md-6 .owl-carousel .owl-theme .owl-dots {
-      display: flex;
-      justify-content: center;
-      padding-right: 0 !important; }
+  body .header .row .col-md-6 .title {
+    font-size: 40px;
+    line-height: 45px;
+    padding: 0 20px;
+    text-align: center;
+    margin-top: 40px; }
+  body .header .row .col-md-6 .t-text {
+    font-size: 16px;
+    line-height: 29px;
+    margin-bottom: 40px;
+    text-align: center; }
+  body .header .row .col-md-6 .links {
+    flex-direction: column;
+    justify-content: center; }
+    body .header .row .col-md-6 .links .button-sec {
+      margin-left: 0px;
+      margin-top: 37px; }
+  body .header .row .col-md-6 .owl-carousel .slide-img {
+    width: 328px;
+    height: 225px; }
+  body .header .row .col-md-6 .owl-carousel .owl-nav button.owl-next {
+    bottom: 50%;
+    right: -20%; }
+  body .header .row .col-md-6 .owl-carousel .owl-theme .owl-dots {
+    display: flex;
+    justify-content: center;
+    padding-right: 0 !important; }
   body .category-section .allTitle {
     font-size: 30px;
     line-height: 36px; }
   body .category-section .col-md-6 .card {
     height: 407px !important; }
+    body .category-section .col-md-6 .card .card-text {
+      font-size: 24px !important;
+      line-height: 30px !important; }
   body .category-section .col-md-3 .card {
     height: 187px; }
+    body .category-section .col-md-3 .card .card-text {
+      font-size: 20px !important;
+      padding-left: 9px !important; }
   body .service-sectione .box {
     display: flex;
     justify-content: center;
@@ -740,6 +743,12 @@ body {
   body .popular-section .allTitle {
     font-size: 30px;
     line-height: 36px; }
+  body .popular-section .cardBoxs {
+    display: flex;
+    justify-content: center; }
+    body .popular-section .cardBoxs .card {
+      width: 320px !important;
+      padding: 0 2px !important; }
   body .partnire-section .allTitle {
     font-size: 30px;
     line-height: 36px; }
@@ -777,5 +786,26 @@ body {
         margin-right: 34px !important; }
     body .footer .mobile .info-text {
       margin-top: 58px; } }
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .navbar .mobileNav {
+    padding-left: 430px !important; }
+  .navbar .collapse .nav-link {
+    font-size: 14px; }
+  .navbar .desktopIcons {
+    display: flex; }
+    .navbar .desktopIcons .nav-item {
+      margin-left: 6px !important; }
+
+  .popular-section .baho {
+    flex-direction: column; }
+  .popular-section .icon-group {
+    width: 80px !important;
+    height: 40px !important;
+    padding: 0 50px !important; }
+    .popular-section .icon-group img {
+      width: 36px; }
+  .popular-section .korzinka {
+    width: 40px !important;
+    height: 40px !important; } }
 
 /*# sourceMappingURL=main.css.map */
